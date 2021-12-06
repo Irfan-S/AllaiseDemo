@@ -27,8 +27,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         Log.d("MYTAG","HEllo world");Log.d("MYTAG","HEllo world");
         Log.d("MYTAG","HEllo world");
         Log.d("MYTAG","HEllo world");
-
-
+        Log.d("MYTAG","Goofbye world")
 
         val docRef = db.collection("counter").document("userA")
         docRef.get()
