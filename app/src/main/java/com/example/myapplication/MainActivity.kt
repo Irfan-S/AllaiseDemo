@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
 
-        // hello world
+        Log.d("MYTAG","HEllo world");
 
 
         val docRef = db.collection("counter").document("userA")
