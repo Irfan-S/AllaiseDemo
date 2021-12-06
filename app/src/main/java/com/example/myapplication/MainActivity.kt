@@ -23,9 +23,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         Log.d("MYTAG","HEllo world");
-
+        Log.d("MYTAG","Goofbye world")
 
         val docRef = db.collection("counter").document("userA")
         docRef.get()
