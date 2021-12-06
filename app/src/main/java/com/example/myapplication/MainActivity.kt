@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
 
+        // hello world
+
 
         val docRef = db.collection("counter").document("userA")
         docRef.get()
@@ -45,12 +47,19 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
         customText = findViewById(R.id.textView9)
-        var clickButton:Button = findViewById(R.id.button)
+        //var clickButton:Button = findViewById(R.id.button)
         customText.text = "Counter is: "+a;
 
 
-        clickButton.setOnClickListener(this)
+        //clickButton.setOnClickListener(this)
 
+    }
+
+    fun incrementCounter(view:View){
+        a++;
+        val data = hashMapOf( "Value" to a);
+        db.collection("counter").document("userA").set(data).addOnSuccessListener { Log.d("MYAPP", "DocumentSnapshot successfully written!") }
+        customText.text = "Counter is: "+a;
     }
 
     override fun onClick(p0: View?) {
