@@ -23,6 +23,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        Log.d("MYTAG","hi world");
+        Log.d("MYTAG","HEllo world");Log.d("MYTAG","HEllo world");
+        Log.d("MYTAG","HEllo world");
         Log.d("MYTAG","HEllo world");
         Log.d("MYTAG","Goofbye world")
 
